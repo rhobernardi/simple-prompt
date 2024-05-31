@@ -35,7 +35,7 @@ local GREY_COLOR="%{$fg[grey]%}"
 local RESET_COLOR="%{$reset_color%}"
 
 local user_host="%B%(!.$RED_COLOR.$GREY_COLOR)%n$RESET_COLOR@$YELLOW_COLOR%m$RESET_COLOR"
-local user_symbol="%(!.#.%(?:➜ :$RED_COLOR_BOLD➜ ))"
+local user_symbol="%(!.#.%(?:➜ :$RED_COLOR_BOLD➜ ))$RESET_COLOR"
 local current_dir="%B$CYAN_COLOR%~%{$reset_color%}"
 
 PROMPT="╭─${user_host}: ${current_dir} \$vcs_info_msg_0_
